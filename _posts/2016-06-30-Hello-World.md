@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      Hello World
-date:       2014-06-11 15:31:19
-summary:    My first Blog with More Coming Soon
+date:       2016-06-30 15:31:19
+summary:    My first Blog Post with More Coming Soon
 categories: Introduction
 ---
 
