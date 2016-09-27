@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      ~
-date:       2016-07-24  15:31:19
+title:      Thoughts on this new and exciting development
+date:       2016-07-26  15:31:19
 summary:    My Views On Chat-bots
 categories: Web Interaction
 ---
