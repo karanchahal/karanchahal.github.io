@@ -77,19 +77,22 @@ To solve this issue LSTM's were developed.
 Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people in following work.1 They work tremendously well on a large variety of problems, and are now widely used.
 
 ###image
-![desk](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Long_Short_Term_Memory.png/600px-Long_Short_Term_Memory.png)
+<div style="text-align:center" markdown="1">
 
+![desk](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Long_Short_Term_Memory.png/600px-Long_Short_Term_Memory.png)
+</div>
 LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn!
 
 Chat bots use a variation of RNN's by using Sequence To Sequence Models. A basic sequence-to-sequence model, as introduced in Cho et al., 2014 (pdf), consists of two recurrent neural networks (RNNs): an encoder that processes the input and a decoder that generates the output. This basic architecture is depicted below.
+<div style="text-align:center" markdown="1">
 
 ![desk](http://d3kbpzbmcynnmx.cloudfront.net/wp-content/uploads/2016/04/nct-seq2seq.png)
-
+</div>
 This [article](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) is a great read.
 
 # Types Of Chat Bots
 
-##RETRIEVAL-BASED VS. GENERATIVE MODELS
+## RETRIEVAL-BASED VS. GENERATIVE MODELS
 
 Retrieval-based models (easier) use a repository of predefined responses and some kind of heuristic to pick an appropriate response based on the input and context. The heuristic could be as simple as a rule-based expression match, or as complex as an ensemble of Machine Learning classifiers. These systems don’t generate any new text, they just pick a response from a fixed set.
 
@@ -101,11 +104,11 @@ Deep Learning techniques can be used for both retrieval-based or generative mode
 You can read more about deep learning and chat bots [here](http://www.wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/)
 
 
-##LONG VS. SHORT CONVERSATIONS
+## LONG VS. SHORT CONVERSATIONS
 
 The longer the conversation the more difficult to automate it. On one side of the spectrum are Short-Text Conversations (easier) where the goal is to create a single response to a single input. For example, you may receive a specific question from a user and reply with an appropriate answer. Then there are long conversations (harder) where you go through multiple turns and need to keep track of what has been said. Customer support conversations are typically long conversational threads with multiple questions.
 
-##OPEN DOMAIN VS. CLOSED DOMAIN
+## OPEN DOMAIN VS. CLOSED DOMAIN
 
 In an open domain (harder) setting the user can take the conversation anywhere. There isn’t necessarily have a well-defined goal or intention. Conversations on social media sites like Twitter and Reddit are typically open domain – they can go into all kinds of directions. The infinite number of topics and the fact that a certain amount of world knowledge is required to create reasonable responses makes this a hard problem.
 
@@ -113,10 +116,11 @@ In a closed domain (easier) setting the space of possible inputs and outputs is 
 
 
 
-#Conclusion
+# Conclusion
+<div style="text-align:center" markdown="1">
 
 ![desk](http://www.pocketpc.ch/attachments/samsung-galaxy-note-10-1-2014-edition/144879d1386977823-rom-sm-p605-hal-9000-slim-p605xxubmj9-tumblr_mxn9oy4c1r1rulnxgo1_500.jpg)
-
+</div>
 To  end this long and meandering blog post, I would just like to say that the future is indeed bright for bots and intelligence in general.
 The long term goal for computers must be to solve Intelligence. Solve Intelligence. Use that to make the world a better place. This Deep Mind motto really inspires me. These advancements really make me believe that we are on the right path and recent chat bots represent a milestone in that journey.
 
