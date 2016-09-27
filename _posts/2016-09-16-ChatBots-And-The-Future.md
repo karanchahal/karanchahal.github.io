@@ -67,7 +67,6 @@ Traditional neural networks can’t do this, and it seems like a major shortcomi
 
 Recurrent neural networks address this issue. They are networks with loops in them, allowing information to persist.
 
-###image
 ![desk](http://d3kbpzbmcynnmx.cloudfront.net/wp-content/uploads/2015/09/rnn.jpg)
 
 RNNs have difficulties learning long-term dependencies – interactions between words that are several steps apart. That’s problematic because the meaning of an English sentence is often determined by words that aren’t very close: “The man who wore a wig on his head went inside”. The sentence is really about a man going inside, not about the wig. But it’s unlikely that a plain RNN would be able capture such information.
@@ -76,7 +75,6 @@ To solve this issue LSTM's were developed.
 ## LSTM
 Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people in following work.1 They work tremendously well on a large variety of problems, and are now widely used.
 
-###image
 <div style="text-align:center" markdown="1">
 
 ![desk](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Long_Short_Term_Memory.png/600px-Long_Short_Term_Memory.png)
