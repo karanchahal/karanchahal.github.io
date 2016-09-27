@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Thoughts on this new and exciting development
+title:      ChatBots And The Future
 comments: true
 date:       2016-07-26  15:31:19
 summary:    My Views On Chat-bots
