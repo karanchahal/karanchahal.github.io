@@ -14,13 +14,13 @@ categories: Deep Learning
 </div>
 Hullo.
 
-In the summer of 2016 I worked on a project that involved detecting mitosis cells in breast histology images. Mitosis detection in skin cells are an indicator of cancer.
-Cancer and mitosis are closely related. Mitosis is the process by which cells reproduce, and without it cancerous cells wouldn't be able to spread through the body and cause tumors.
+In the summer of 2016 I worked on a project that involved detecting mitosis cells in breast histology images. Mitosis detection in skin cells are an indicator of cancer. Cancer and mitosis are closely related. Mitosis is the process by which cells reproduce, and without it cancerous cells wouldn't be able to spread through the body and cause tumors.
 The project was really interesting because of mainly three reasons.
 
 * Firstly, a successful implementation can reduce doctor hours drastically and automate this procedure by reducing the manual part of the procedure
 
 * Secondly, it was a challenge to do image recognition using deep learning which represents the bleeding edge of tech in this field. Image detection has come a long way and detection of these structures is very feasible. It the perfect application of Convolution Neural Nets
+
 * A chance to dive into one of the excellent Python Deep Learning libraries such as *Theano*,*Keras* etc.
 
 
@@ -31,8 +31,10 @@ As for the manual part, a research paper on the Topic of [*Detecting Mitosis in 
 
 To know more about deep learning I would like to refer you to this wonderful resource [here](http://neuralnetworksanddeeplearning.com/) .
 
-![desk](https://researchweb.iiit.ac.in/~shashank.mujumdar/img/Picture14.jpg)
 
+<div style="text-align:center" markdown="1">
+![desk](https://researchweb.iiit.ac.in/~shashank.mujumdar/img/Picture14.jpg)
+</div>
 
 Now that we had gotten these things, the first objective was to parse the dataset to build our X and y dataset. Also split this into the training, testing and cross validation datasets.
 
@@ -50,14 +52,14 @@ For our project a convolutional net was used with a number of alternating filter
 After reducing the 101*101 patches to roughly 24*24 patches which were then run through a fully connected multi perceptron network which was attached to a [softmax](https://en.wikipedia.org/wiki/Softmax_function) layer to output the probabilities of the two classes.
 
 After training for roughly a day, the model was tested and the hyper parameters varied.
-We managed to achieve an accuracy of 82% which is roughly equal to what the paper stated.
+We managed to achieve an accuracy of 82% which was roughly equal to what the paper stated.
 
 ![desk](http://medicalimaging.spiedigitallibrary.org/data/Journals/JMIOBU/930715/JMI_1_3_034003_f008.png)
 
 After training the model, the final demo had to be created.
 The demo took a breast histology image as input and outputted the same image overlaid with indicators at pixel points where a mitosis cell was detected.
 To achieve this, after taking the image as input , a subset of points were deemed worthy of further scrutiny by running into a DNN which told with a 60 % probability that the cells were mitosis.
-The positive results from this DNN were then fed into the main model that we had trained above, where the final result would be calculated. The probabilities outputted were put in a probability map. This probablity map which usually is extremely chaotic was smoothened using a gaussian blur function. Finally the pixel points of the actual mitosis were extracted if they cleared some pre set threshold.
+The positive results from this DNN were then fed into the main model that we had trained above, where the final result would be calculated. The probabilities outputted were put in a probability map. This probability map which usually is extremely chaotic was smoothened using a gaussian blur function. Finally the pixel points of the actual mitosis were extracted if they cleared some pre set threshold.
 
 
 
