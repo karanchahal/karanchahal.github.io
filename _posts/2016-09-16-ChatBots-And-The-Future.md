@@ -5,10 +5,11 @@ date:       2016-07-24  15:31:19
 summary:    My Views On Chat-bots
 categories: Web Interaction
 ---
+<div style="text-align:center" markdown="1">
 
 ![desk](https://upload.wikimedia.org/wikipedia/en/3/39/R2-D2_Droid.png)
 
-
+</div>
 Greetings earthling,
 
 
