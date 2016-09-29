@@ -36,27 +36,14 @@ we began strolling through the market looking for other options. I had read on t
 I was reminded of that fact when I saw a fit young man , with mountain ropes around his waist.
 We went up to him and told him about our situation.<br>
 
-*
-'We want to go to Beas Kund'<br>
-*
-**
-'3000 ruppees, and you'll need to get supplies'<br>
-**
-*
-'What supplies would we need ?'<br>
-*
-**
-'You need one more tent, sleeping bags and tent matresses. Furthermore you'll need to get a stove, kerosene and food supplies if you intend to survive the trip.'<br>
-**
-*
-'Do you know of such a place where we can get this stuff ?'<br>
-*
-**
-'Yes'<br>
-**
-*
-'Brilliant'<br>
-*
+*'We want to go to Beas Kund'*<br>
+**'3000 ruppees, and you'll need to get supplies'**<br>
+*'What supplies would we need ?'*<br>
+**'You need one more tent, sleeping bags and tent matresses. Furthermore you'll need to get a stove, kerosene and food supplies if you intend to survive the trip.'**<br>
+*'Do you know of such a place where we can get this stuff ?'*<br>
+**'Yes'**<br>
+*'Brilliant'*<br>
+
 
 
 We set off to the trek supply shop with our new friend and got the needed supplies. We also got a lot of energy bars, a packet of sausages and 10 packets of Maggi(Noodles) to keep us from starving in those inhospitable environment.
