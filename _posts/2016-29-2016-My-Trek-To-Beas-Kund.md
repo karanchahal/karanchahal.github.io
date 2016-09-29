@@ -6,7 +6,7 @@ comments: true
 summary:    An experience to remember
 categories: Recreation
 ---
-
+![desk](https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/12109033_1166373230044210_9104626001434653129_n.jpg?oh=6e25b8ebab6fb8107abfce5bc7d0d56e&oe=586502DF)
 Hullo,
 
 Last autumn ,I went on a trekking expedition with 2 of my friends. We went to a place called Beas Kund which is known for its scenic beauty and challenging climbs.
@@ -63,6 +63,7 @@ We set off to the trek supply shop with our new friend and got the needed suppli
 
 Around 12, we took a taxi to the place from where the trek begun and after reaching there. We were **OFF** !
 
+![dest](https://lh3.googleusercontent.com/3ztHfOmWGYb0GfrcOYf1MAsAr_ZS2OjpYG5alFv8h_IZHFjFwjbTWoyRKbZZF56bUuJ5aiplpzfr_uM=w1366-h662-rw)
 We trudged up a half made road through bare tunnels and through waterfalls, until we reached the foothills of the mountains.
 We were a little tired as we had walked for a solid 2 hours with 15 kilograms on our backs no less.
 
@@ -70,6 +71,8 @@ That load seemed to lessen when we reached the mountain we were to climb, with i
 We walked through this green wonderland till we reached the base camp, where we erected our tents and set up camp for the night.
 
 Night falls early in the mountains and it is absolute. Once the sun goes down, the temperature falls swiftly. We had trouble seeing our hands in the pitch darkness and settled around our little stove that provided a dim flickering light. There was a feeling of companionship and brotherhood in the tent as we made our food(lots of water and noodles). The laughter and stories told numbed the feeling of isolation and the night sped along swiftly.
+
+![dest](https://lh6.googleusercontent.com/J1qLdfkTxE3WJrAC3dd0HwqN6Z84VtTnKateaC15GoasFo8mux5yuTA1RN2KCHBClb8qQYwowU1NyQk=w1366-h662-rw)
 
 We woke up early the next morning and silently packed up our belongings and set off for what was the most grueling part of the trek.
 The path curved and twisted along with sudden dips and rises in height. This in itself was exhausting for our bodies, but pared with carrying our supplies, it became quite daunting.
@@ -81,10 +84,13 @@ We were **living our dreams** though! How good can this get, we're up here in th
   Your responsibilities, goals, all of them fade and you just soak in the moment. It is really an intense feeling.
 
 We Crossed little rivlets, ate in the shade of some of the tallest pine trees I had ever seen. We arrived at our destination by 3 p.m and set up camp.
+![dest](https://lh6.googleusercontent.com/9FtdUtQEpNKcVqjiBQvE_aPTwa0O0nZPZcv7-KWNzaoUap0xMT9dSGGP3IfES3ZeOEywC7Weak39ZmQ=w1365-h662-rw)
+
 It was beautiful, snow capped mountains were within reach and we climbed up to check them out. We couldn't reach because the path suddenly ended and it became quite dangerous to continue on.
  So, we went back to our camp and met some fellow trekkers . One of them was from Japan and the other from Canada. It was great meeting them and sharing our collective experiences.
 
 As night arrived, we made our dinner and retired to our beds. We promptly feel asleep as we were all very tired.
+
 
  The next day we made our way back. The trip down was not nearly as challenging as the trip up, but it was more relaxing. On the way down we jumped into a pool of glacial water. That was a memorable experience too.
  Finally after going past our base camp, we managed to hitch a dirt truck and the driver was kind enough to drop us to Manali, no charge !
@@ -99,3 +105,5 @@ The air, the views and the breakneck speed. All perfect.
 
  With those experiences we boarded our bus back home and bid adieu to the trip of our lifetime.
  It was really an experience to remember.
+
+![dest](https://lh3.googleusercontent.com/zK9tzLu2mavKf310FzCJCqCrCGMK7xmvvSf7t0OZa-4u6Q0KiTglLmJWAYv4je0D6Fz8hAhdEd6Zk2s=w1366-h662-rw)

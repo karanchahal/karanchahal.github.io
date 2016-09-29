@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      JavaScript &#10084;
-date:       2016-07-26  15:31:19
+date:       2016-08-14  15:31:19
 comments: true
 summary:    The one language to rule them all (not really)
 categories: Web Development
