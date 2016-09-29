@@ -21,12 +21,10 @@ After a long overnight bus journey we reached our destination by 8 A.M the next 
 
 Manali was a beautiful place with huge snow capped mountains surrounding it from all sides . There was a bustling main market where vendors would sell their wares. However, at that time of the morning, they were simply setting up their shops. We approached a travel agent to inquire about the trek we were about to take.
 
-**
-'10,000 ruppees!'<br>
-'per person'<br>
-'No negotiation'<br>
-'And we leave tomorrow'
-**
+**'10,000 ruppees!'**<br>
+**'per person'**<br>
+**'No negotiation'**<br>
+**'And we leave tomorrow'**
 
 *We didn't like that very much.*
 
