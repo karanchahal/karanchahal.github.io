@@ -61,7 +61,7 @@ Let's talk about the technology that powers these chat bots.
 Artificial Intelligence/Machine Learning and more specifically deep learning are at heading this quest. The field has seen a lot of advancements in the past few years and is blowing up right now. It would be safe to say that we would be in the 'AI bubble' presently.
 Neural networks form the basis of these deep learning algorithms More specifically Recurrent Neural Networks (RNN's). RNN's are really hot right now and are used in almost all NLP based tasks by the organizations that are heading the chat bot effort.
 
-## Recurrent Neural Netorks
+## Recurrent Neural Networks
 Humans don’t start their thinking from scratch every second. As you read this article, you understand each word based on your understanding of previous words. You don’t throw everything away and start thinking from scratch again. Your thoughts have persistence.
 
 Traditional neural networks can’t do this, and it seems like a major shortcoming. For example, imagine you want to classify what kind of event is happening at every point in a movie. It’s unclear how a traditional neural network could use its reasoning about previous events in the film to inform later ones.
