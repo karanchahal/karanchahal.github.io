@@ -48,7 +48,7 @@ We set off to the trek supply shop with our new friend and got the needed suppli
 
 Around 12, we took a taxi to the place from where the trek begun and after reaching there. We were **OFF** !
 
-![dest](https://lh3.googleusercontent.com/3ztHfOmWGYb0GfrcOYf1MAsAr_ZS2OjpYG5alFv8h_IZHFjFwjbTWoyRKbZZF56bUuJ5aiplpzfr_uM=w1366-h662-rw)
+![dest](http://i.imgur.com/P0htx9S.jpg)
 We trudged up a half made road through bare tunnels and through waterfalls, until we reached the foothills of the mountains.
 We were a little tired as we had walked for a solid 2 hours with 15 kilograms on our backs no less.
 
