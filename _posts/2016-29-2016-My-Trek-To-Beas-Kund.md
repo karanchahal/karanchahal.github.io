@@ -59,7 +59,7 @@ We walked through this green wonderland till we reached the base camp, where we 
 
 Night falls early in the mountains and it is absolute. Once the sun goes down, the temperature falls swiftly. We had trouble seeing our hands in the pitch darkness and settled around our little stove that provided a dim flickering light. There was a feeling of companionship and brotherhood in the tent as we made our food(lots of water and noodles). The laughter and stories told numbed the feeling of isolation and the night sped along swiftly.
 
-![dest](https://lh6.googleusercontent.com/J1qLdfkTxE3WJrAC3dd0HwqN6Z84VtTnKateaC15GoasFo8mux5yuTA1RN2KCHBClb8qQYwowU1NyQk=w1366-h662-rw)
+![dest](http://i.imgur.com/ldX1blG.jpg)
 
 We woke up early the next morning and silently packed up our belongings and set off for what was the most grueling part of the trek.
 The path curved and twisted along with sudden dips and rises in height. This in itself was exhausting for our bodies, but pared with carrying our supplies, it became quite daunting.
@@ -71,7 +71,7 @@ We were **living our dreams** though! How good can this get, we're up here in th
   Your responsibilities, goals, all of them fade and you just soak in the moment. It is really an intense feeling.
 
 We Crossed little rivlets, ate in the shade of some of the tallest pine trees I had ever seen. We arrived at our destination by 3 p.m and set up camp.
-![dest](https://lh6.googleusercontent.com/9FtdUtQEpNKcVqjiBQvE_aPTwa0O0nZPZcv7-KWNzaoUap0xMT9dSGGP3IfES3ZeOEywC7Weak39ZmQ=w1365-h662-rw)
+![dest](http://i.imgur.com/eH83ue9.jpg)
 
 It was beautiful, snow capped mountains were within reach and we climbed up to check them out. We couldn't reach because the path suddenly ended and it became quite dangerous to continue on.
  So, we went back to our camp and met some fellow trekkers . One of them was from Japan and the other from Canada. It was great meeting them and sharing our collective experiences.
@@ -93,4 +93,4 @@ The air, the views and the breakneck speed. All perfect.
  With those experiences we boarded our bus back home and bid adieu to the trip of our lifetime.
  It was really an experience to remember.
 
-![dest](https://lh3.googleusercontent.com/zK9tzLu2mavKf310FzCJCqCrCGMK7xmvvSf7t0OZa-4u6Q0KiTglLmJWAYv4je0D6Fz8hAhdEd6Zk2s=w1366-h662-rw)
+![dest](http://i.imgur.com/lfSow1h.jpg)
