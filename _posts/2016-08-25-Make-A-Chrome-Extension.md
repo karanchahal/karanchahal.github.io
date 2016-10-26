@@ -96,9 +96,7 @@ chrome.runtime.onMessage.addListener(
               title: 'Click to download torrents',
               tabId: sender.tab.id
           });
-  });
-
- ```
+  }); ```
 
 The background file also checks if the extension icon is clicked , if yes then it runs another script (_worker-script.js_) to open the magnet link found in the previous content script.
 
@@ -110,8 +108,7 @@ The code for the background script that checks this is:
           code: 'var magnetLink=' + link + ';'
       },function() {
           chrome.tabs.executeScript(null,{file:'worker_script.js'});
-      });
-```
+      });```
 
 You'll observe that all these functions start with the
 ` chrome.runtime.` line.
