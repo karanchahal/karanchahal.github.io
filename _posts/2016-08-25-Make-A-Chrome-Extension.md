@@ -96,7 +96,8 @@ chrome.runtime.onMessage.addListener(
               title: 'Click to download torrents',
               tabId: sender.tab.id
           });
-  }); ```
+  });
+```
 
 The background file also checks if the extension icon is clicked , if yes then it runs another script (_worker-script.js_) to open the magnet link found in the previous content script.
 
@@ -108,7 +109,9 @@ The code for the background script that checks this is:
           code: 'var magnetLink=' + link + ';'
       },function() {
           chrome.tabs.executeScript(null,{file:'worker_script.js'});
-      });```
+      });
+```
+
 
 You'll observe that all these functions start with the
 ` chrome.runtime.` line.
@@ -157,7 +160,7 @@ The worker_script code is simply
 ```
 window.open(magnetLink,'_self');
 ```
-This triggers the magnet link, '_self' makes sure it opens in the current_tab.
+This triggers the magnet link, '_self' makes sure it opens in the current tab.
 
 
 
@@ -167,15 +170,15 @@ Chrome.tabs is used a lot and it is a Google extension API to facilitate client-
 
 # Loading the extension
 
-Now to complete this process drag and drop the extension folder to (here)[chrome://extensions/]. ENable/Load it and run.
+Now to complete this process drag and drop the extension folder to [here](chrome://extensions/) . Enable/load it and run.
 
 
 
 
-THe entire github repo can be found [here](https://github.com/karanchahal/Torrent-Hunter).
+The entire github repo can be found [here](https://github.com/karanchahal/Torrent-Hunter).
 
 # Conclusion
 
-This has been just a slight taste of wehat extensions can do, had over to the [official chrome extension documentation](https://developer.chrome.com/extensions) that explores a variety of unique ways that an extension can be used.
+This has been just a slight taste of what extensions can do, had over to the [official chrome extension documentation](https://developer.chrome.com/extensions) that explores a variety of unique ways that an extension can be used.
 
 Have a great day !
