@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      Make A Chrome Extension
+title:      Lets Make A Chrome Extension
 comments: true
 date:       2016-10-26  15:31:19
-summary:    My Views On Chat-bots
+summary:    An introduction to extension programming wherein we make a torrent scrapping chrome extension !
 categories: Chrome Extension Programming
 ---
 <div style="text-align:center" markdown="1">
@@ -170,15 +170,15 @@ Chrome.tabs is used a lot and it is a Google extension API to facilitate client-
 
 # Loading the extension
 
-Now to complete this process drag and drop the extension folder to [here](chrome://extensions/) . Enable/load it and run.
+Now to complete this process drag and drop the extension folder to **chrome://extensions/** . Enable/load it and run.
 
 
 
 
-The entire github repo can be found [here](https://github.com/karanchahal/Torrent-Hunter).
+The entire github repository can be found [here](https://github.com/karanchahal/Torrent-Hunter).
 
 # Conclusion
 
-This has been just a slight taste of what extensions can do, had over to the [official chrome extension documentation](https://developer.chrome.com/extensions) that explores a variety of unique ways that an extension can be used.
+This has been just a slight taste of what extensions can do, had over to the [official chrome extension documentation](https://developer.chrome.com/extensions) that explores a variety of unique ways that an extension can be made in.
 
 Have a great day !
