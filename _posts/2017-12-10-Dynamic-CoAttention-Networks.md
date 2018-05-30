@@ -1,4 +1,3 @@
-# Dynamic Coattention Networks For Question Answering
 
 This paper aims to provide a model for QA. It encorporates a novel co attention system between the question and the passage. The basic gist of this paper is that attention is usually calculated for a single entity, or vector.
 In this paper , they devised a mechanism to create attention vectors for two vectors/modalities, the passage and the question.
