@@ -1,4 +1,3 @@
-# Log Loss Explained
 
 We applied "log loss" and trained until convergence
 
