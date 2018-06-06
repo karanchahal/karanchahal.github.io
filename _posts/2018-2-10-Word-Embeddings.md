@@ -1,6 +1,5 @@
-# Word Level Semantics Notes
 
-Word Vectors -> repreentation of words as a vector of numbers.
+Word Vectors are a repreentation of words as a vector of numbers.
 
 These word vectors once correctly learnt, exhibit very useful properties.
 
