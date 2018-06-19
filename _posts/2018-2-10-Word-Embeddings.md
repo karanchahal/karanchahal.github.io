@@ -1,5 +1,5 @@
 
-Word Vectors are a repreentation of words as a vector of numbers.
+Word Vectors are a reprentation of words as a vector of numbers.
 
 These word vectors once correctly learnt, exhibit very useful properties.
 
