@@ -7,7 +7,7 @@ The goal of using Paxos is to create a replicated state machine. A state machine
 
 ## Key Property Of Consensus
 
-Key proprty of consensus. A consensus algorithm can work if a bare majority of its servers are still functioning. For example, if out of 5 servers , 3 are up, the cluster can continue to function.Typically cluster sizes are small of the order of an odd number. 3, 5 or 7. If the servers are up , they will run in a way tat make sense. There are no Bynatine errors. Hence it is a _fail-stop_ model.
+Key proprty of consensus. A consensus algorithm can work if a bare majority of its servers are still functioning. For example, if out of 5 servers , 3 are up, the cluster can continue to function.Typically cluster sizes are small of the order of an odd number. 3, 5 or 7. If the servers are up , they will run in a way that makes sense. There are no Bynatine errors. Hence it is a _fail-stop_ model.
 
 ## Assumptions
 
