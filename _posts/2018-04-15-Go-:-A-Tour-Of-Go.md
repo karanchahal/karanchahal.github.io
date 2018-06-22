@@ -1,7 +1,4 @@
-# _Go_ : A Tour of Concurrency
-
  
-
 Before diving into Go Concurrency. Let's talk about the Go language for a bit.
 
  
