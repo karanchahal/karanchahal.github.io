@@ -1,7 +1,4 @@
- 
-Before diving into Go Concurrency. Let's talk about the Go language for a bit.
-
- 
+We are mainly going to talk about the concurrency features of Go but before diving into Go Concurrency. Let's talk about the Go language for a bit.
 
 Why would you want to use Go ?
 
@@ -68,10 +65,6 @@ These are a few things that one needs to know about Go. This could be a plus or 
  
 
 The thought process behind removing these is to reduce langauge blot. Also the writers profess that you can write really clean maintainable code without these abstractions.
-
- 
-
- 
 
 # _Go_ Concurrency
 
@@ -185,8 +178,6 @@ func boring(msg string, c chan string) {
 
 }
 
- 
-
 func main() {
 
     c := make(chan string)
@@ -202,18 +193,11 @@ func main() {
     fmt.Println("You're boring; I'm leaving.")
 
 }
-
- 
-
 ```
 
  
 
 Note that one has to transfer the channel in the argument of the function to be able to communicate.
-
- 
-
- 
 
 ## _Go_ Patterns
 
@@ -233,8 +217,6 @@ This function returns a channel , while running the respective function
 
 ```
 
- 
-
 c := boring("boring!") // Function returning a channel.
 
     for i := 0; i < 5; i++ {
@@ -244,10 +226,6 @@ c := boring("boring!") // Function returning a channel.
     }
 
     fmt.Println("You're boring; I'm leaving.")
-
- 
-
- 
 
 func boring(msg string) <-chan string { // Returns receive-only channel of strings.
 
@@ -268,9 +246,6 @@ func boring(msg string) <-chan string { // Returns receive-only channel of strin
     return c // Return the channel to the caller.
 
 }
-
- 
-
 ```
 
  
@@ -280,7 +255,6 @@ We can use the generator pattern to communicate with different instances of a se
  
 
 ```
-
 func main() {
 
     joe := boring("Joe")
@@ -299,8 +273,6 @@ func main() {
 
 }
 
- 
-
 ```
 
  
@@ -318,7 +290,6 @@ We can have something called a _fan in_ function to let whosoever is ready to ta
  
 
 ```
-
 func fanIn(input1, input2 <-chan string) <-chan string {
 
     c := make(chan string)
@@ -330,8 +301,6 @@ func fanIn(input1, input2 <-chan string) <-chan string {
     return c
 
 }
-
- 
 
 func main() {
 
@@ -346,9 +315,6 @@ func main() {
     fmt.Println("You're both boring; I'm leaving.")
 
 }
-
- 
-
 ```
 
  
@@ -388,9 +354,6 @@ The select statement is a switch case, but every case is a communication via a c
  
 
 ```
-
- 
-
 select {
 
     case v1 := <-c1:
@@ -410,9 +373,6 @@ select {
         fmt.Printf("no one was ready to communicate\n")
 
     }
-
- 
-
 ```
 
  
@@ -428,7 +388,6 @@ Now using the patterns that we have right now, we can rewrite our original Fan I
  
 
 ```
-
 func fanIn(input1, input2 <-chan string) <-chan string {
 
     c := make(chan string)
@@ -452,9 +411,6 @@ func fanIn(input1, input2 <-chan string) <-chan string {
     return c
 
 }
-
- 
-
 ```
 
 This is more efficient as we just have one function instead of two.
@@ -465,12 +421,11 @@ This is more efficient as we just have one function instead of two.
 
  
 
-We can include a time out, if a channel  has no resposne for a while , we can do something to time out. Here go's time.After
+We can include a time out, if a channel  has no resposne for a while , we can do something to time out. Here go's time.After is used.
 
  
 
 ```
-
 func main() {
 
     c := boring("Joe")
@@ -495,13 +450,11 @@ func main() {
 
 }
 
- 
-
 ```
 
  
 
-We can create timeout for the entire conversatoin using a timeAfter outside the for loop.  Hence, we can define how lon we want the total conversation to carry on for.
+We can create timeout for the entire conversation using a time.After outside the for loop.  Hence, we can define how long we want the total conversation to carry on for.
 
  
 
@@ -509,14 +462,10 @@ We can create timeout for the entire conversatoin using a timeAfter outside the 
 
  
 
-We can turn this around and tell the channel that we are tired of listening to him.
+We can turn this around and tell the channel that we are tired of listening to it.
 
  
-
 ```
-
- 
-
 quit := make(chan bool)
 
     c := boring("Joe", quit)
@@ -524,13 +473,9 @@ quit := make(chan bool)
     for i := rand.Intn(10); i >= 0; i-- { fmt.Println(<-c) }
 
     quit <- true
-
- 
-
 ```
 
 ```
-
 // in channel function now
 
             select {
@@ -544,7 +489,6 @@ quit := make(chan bool)
                 return
 
             }
-
 ```
 
  
@@ -558,7 +502,6 @@ That is , we recieve on the quit channel.
  
 
 ```
-
 quit := make(chan string)
 
     c := boring("Joe", quit)
@@ -568,11 +511,6 @@ quit := make(chan string)
     quit <- "Bye!"
 
     fmt.Printf("Joe says: %q\n", <-quit)
-
- 
-
- 
-
 ```
 
  
@@ -580,7 +518,6 @@ quit := make(chan string)
  
 
 ```
-
 select {
 
             case c <- fmt.Sprintf("%s: %d", msg, i):
@@ -596,9 +533,6 @@ select {
                 return
 
             }
-
- 
-
 ```
 
  
@@ -616,17 +550,11 @@ A sequential way to pass information by dividing a task into steps. We can achie
  
 
 ```
-
- 
-
 func f(left, right chan int) {
 
     left <- 1 + <-right
 
 }
-
- 
-
 func main() {
 
     const n = 10000
@@ -652,9 +580,6 @@ func main() {
     fmt.Println(<-leftmost)
 
 }
-
- 
-
 ```
 
  
@@ -692,7 +617,6 @@ We get our search results by quering Web Search, Image Search, Youtube, Maps, Ne
 We simulate the search functoin.
 
 ```
-
 var (
 
     Web = fakeSearch("web")
@@ -703,11 +627,7 @@ var (
 
 )
 
- 
-
 type Search func(query string) Result
-
- 
 
 func fakeSearch(kind string) Search {
 
@@ -721,10 +641,6 @@ func fakeSearch(kind string) Search {
 
 }
 
- 
-
- 
-
 ```
 
 Testing the framework
@@ -732,7 +648,6 @@ Testing the framework
  
 
 ```
-
 func main() {
 
     rand.Seed(time.Now().UnixNano())
@@ -749,10 +664,6 @@ func main() {
 
 }
 
- 
-
- 
-
 ```
 
  
@@ -762,7 +673,6 @@ func main() {
  
 
 ```
-
 func Google(query string) (results []Result) {
 
     results = append(results, Web(query))
@@ -773,9 +683,7 @@ func Google(query string) (results []Result) {
 
     return
 
-}
-
- 
+} 
 
 ```
 
@@ -796,7 +704,6 @@ No locks, No condition variables. No callbacks.
  
 
 ```
-
 func Google(query string) (results []Result) {
 
     c := make(chan Result)
@@ -821,8 +728,6 @@ func Google(query string) (results []Result) {
 
 }
 
- 
-
 ```
 
  
@@ -838,7 +743,6 @@ Adding timeout. Don't wait for slow results.
  
 
 ```
-
 c := make(chan Result)
 
     go func() { c <- Web(query) } ()
@@ -846,9 +750,7 @@ c := make(chan Result)
     go func() { c <- Image(query) } ()
 
     go func() { c <- Video(query) } ()
-
- 
-
+    
     timeout := time.After(80 * time.Millisecond)
 
     for i := 0; i < 3; i++ {
@@ -870,9 +772,6 @@ c := make(chan Result)
     }
 
     return
-
- 
-
 ```
 
  
@@ -886,7 +785,6 @@ Hence, we shoot the results to a bunch of replicas and return whatever comes alo
  
 
 ```
-
 func First(query string, replicas ...Search) Result {
 
     c := make(chan Result)
@@ -908,7 +806,6 @@ func First(query string, replicas ...Search) Result {
  
 
 ```
-
 func main() {
 
     rand.Seed(time.Now().UnixNano())
@@ -928,9 +825,6 @@ func main() {
     fmt.Println(elapsed)
 
 }
-
- 
-
 ```
 
  
@@ -948,7 +842,6 @@ We can reduce tail latency by using replicated search servers.
  
 
 ```
-
 c := make(chan Result)
 
     go func() { c <- First(query, Web1, Web2) } ()
@@ -978,13 +871,6 @@ c := make(chan Result)
     }
 
     return
-
- 
-
- 
-
- 
-
 ```
 
  
