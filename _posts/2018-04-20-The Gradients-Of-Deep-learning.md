@@ -220,4 +220,5 @@ H = activation(np.dot(W,x) + b) * p
  
  4. Use dropout to aid regularisation.
  
- 3. 
+
+Cheers !
