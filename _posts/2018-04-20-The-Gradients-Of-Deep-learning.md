@@ -1,5 +1,3 @@
-# Gradients Of Deep Learning
-
 This blog post talks about everything regarding the gradients and weights of deep learning. More specifically we will talk about these things.
 
 1. Weight Initialisation
