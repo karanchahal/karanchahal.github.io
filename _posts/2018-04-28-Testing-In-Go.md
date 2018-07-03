@@ -27,7 +27,7 @@ func TestIndex(t *testing.T) {
 Table driven tests are tests where you specify test case with each test case has input and expected output. This code will make things more clear.
 
 ```
-unc TestIndex(t *testing.T) {
+func TestIndex(t *testing.T) {
     var tests = []struct {
         s   string
         sep string
