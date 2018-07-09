@@ -1,6 +1,6 @@
-I am currently in the process of implementing some the most cutting edge object detection algorithms [here](http://github.com/karanchahal/object-detection "object detection") and am going to blog my experience implementing them.
+I am currently in the process of implementing some the most __cutting edge__ object detection algorithms [here](http://github.com/karanchahal/object-detection "object detection") and am going to blog my experience implementing them.
 
-This would be a great opportunity for someone not only to learn how deep learning algorithms are implemented but also informs about what it takes to get something researched based like this production ready.
+This would be a great opportunity for someone not only to learn how deep learning algorithms are implemented but also informs about what it takes to get something research based like this, __production ready__.
 
 We are going to talk about our input pipeline today. More specifically how we load our data set in Pytorch and generate targets for our machine learning model.
 
@@ -12,9 +12,9 @@ The implementation points are:
 
 1. Load images and bounding box
 2. Get images in batches.
-3. Generate Anchors for each Image
+3. Generate __Anchors__ for each Image
 
-Pytorch provides an easy API to implement both of these.
+__Pytorch__ provides an easy API to implement both of these.
 
 ### Prerequisites
 
