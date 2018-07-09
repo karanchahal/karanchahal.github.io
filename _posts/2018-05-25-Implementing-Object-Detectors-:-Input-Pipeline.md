@@ -28,7 +28,7 @@ torchvision
 
 ### Loading Image ids from COCO
 
-The COCO folks have made a libraray called PyCOCO library. There is an object called ```COCO``` through which the dataset is accessed.
+The COCO folks have made a library called __PyCOCO__ library. There is an object called ```COCO``` through which the dataset is accessed.
 
 ```
 # path to Coco Dataset
@@ -78,7 +78,7 @@ def loadImageNode(id):
     return image_node
 ```
 
-The image Node will be of the following format
+The __image Node__ will be of the following format
 ```
 {
     'date_captured': '2013-11-20 05:50:03', 
@@ -92,7 +92,7 @@ The image Node will be of the following format
 }
 ```
 
-Now , from this image node we get the bounding boxes for them with the following code
+Now , from this __image node__ we get the bounding boxes for them with the following code
 
 ```
 
@@ -193,23 +193,23 @@ def main():
 What are anchors ?
 
 Anchors are meant to denote a set of regions in an image. Anchors are
-simply rectangular crops of the image. These anchors can be of different
+simply __rectangular crops__ of the image. These anchors can be of different
 sizes and aspect ratios. In practice, at a single pixel in an image, 3
 areas with 3 aspect ratios each are cropped out. The authors use
-areas/scales of 32px, 64px and 128px and aspect ratios of 1:1, 1:2, 2:1.
-Hence , 9 anchors are cropped out from each pixel of the image.
+areas/scales of __32px, 64px and 128px__ and aspect ratios of __:1, 1:2, 2:1__.
+Hence , __9__ anchors are cropped out from each pixel of the image.
 In the paper, anchors are not cropped for every pixel in the image,
-Anchors are cropped out after every few pixels in a sliding window
+Anchors are _cropped out after every few pixels in a sliding window_
 fashion. The number of pixels after which a new set of anchors would be
-cropped out are decided by what was the compression factor of the
+cropped out are decided by what was the __compression factor__ of the
 feature map. In VGG Net , that number is 16.
 Hence, anchors cover each and every region of the image quite well.
-Faster RCNN uses the concept of anchors to cover a high percentage of
+__Faster RCNN__ uses the concept of anchors to cover a _high percentage_ of
 regions in an image.
 
 ## Anchor Generation
 
-To generate anchors, we take the image width, height and the compression factor.
+To generate anchors, we take the image __width, height and the compression factor__.
 
 The code for this is given below
 
@@ -232,20 +232,22 @@ def getAnchorsForPixelPoint(i,j,width,height):
     return anchors
 ```
 
-One tip during the loading of input pipeline is to __always__ try to visualise what you're doing. let's visualise our anchors for an image. The compression factor has been bumped up to not let the anchors crowd each other too much.
+One tip during the loading of input pipeline is to __always__ try to visualise what you're doing. let's visualise our __anchors__ for an image. The compression factor has been bumped up to not let the anchors crowd each other too much.
+
+This image denotes anchors generate around some pixels.
 
 ![Anchors]( https://raw.githubusercontent.com/karanchahal/object-detection/develop/wiki/images/anchors.png "Anchors")
 
 ### Anchors Centers
 
-We can also visualise anchor centers here
+We can also visualise __anchor centers__ here
 
 ![Anchors]( https://raw.githubusercontent.com/karanchahal/object-detection/develop/wiki/images/anchorc.png "Anchors")
 
 ## Conclusion
 
 That's all for today. We generated anchors and loaded the COCO dataset. We shall go more into the actual algorithmic details in future posts. 
-If one wants to read more on object detection algorithms, read through the papers embedded in the README of the Facebook detectron repository.
+If one wants to read more on object detection algorithms, read through the papers embedded in the README of the Facebook __detectron__ repository.
 
 Cheers
 
