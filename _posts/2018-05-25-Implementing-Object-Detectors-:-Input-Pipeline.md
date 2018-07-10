@@ -81,14 +81,14 @@ def loadImageNode(id):
 The __image Node__ will be of the following format
 ```json
 {
-    'date_captured': '2013-11-20 05:50:03', 
-    'height': 512,
-    'width': 640,
-    'license': 1,
-    'file_name': 'COCO_val2014_000000262148.jpg',
-    'coco_url': 'http://images.cocodataset.org/val2014/COCO_val2014_000000262148.jpg', 
-    'id': 262148, 
-    'flickr_url': 'http://farm5.staticflickr.com/4028/4549977479_547e6b22ae_z.jpg'
+    "date_captured": "2013-11-20 05:50:03", 
+    "height": 512,
+    "width": 640,
+    "license": 1,
+    "file_name": 'COCO_val2014_000000262148.jpg',
+    "coco_url": "http://images.cocodataset.org/val2014/COCO_val2014_000000262148.jpg", 
+    "id": 262148, 
+    "flickr_url": "http://farm5.staticflickr.com/4028/4549977479_547e6b22ae_z.jpg"
 }
 ```
 
@@ -112,13 +112,13 @@ We get a response as follows for bounding boxes. We extract the bbox array from 
 ```json
 [
     {
-        'bbox': [132.99, 21.03, 315.59, 110.4], 
-        'segmentation': [<segmentation-mask>],
-        'iscrowd': 0, 
-        'area': 15019.191850000001, 
-        'id': 134709, 
-        'category_id': 3, 
-        'image_id': 262161
+        "bbox": [132.99, 21.03, 315.59, 110.4], 
+        "segmentation": "[<segmentation-mask>]",
+        "iscrowd": 0, 
+        "area": 15019.191850000001, 
+        "id": 134709, 
+        "category_id": 3, 
+        "image_id": 262161
     }
 ]
 
