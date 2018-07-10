@@ -62,7 +62,7 @@ This is why golang is a perfect langauge for building a system like this. It pro
 
 The sample code for a concurrenct DHT described above is given below. Keep in mind that this code would probably not be used in the production build. It is just for teaching purposes.
 
-```
+```go
 package dht
 
 import (
