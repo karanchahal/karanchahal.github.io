@@ -30,7 +30,7 @@ torchvision
 
 The COCO folks have made a library called __PyCOCO__ library. There is an object called ```COCO``` through which the dataset is accessed.
 
-```
+```python
 # path to Coco Dataset
 annFile='/annotations/instances_val_2014.json'
 
@@ -40,7 +40,7 @@ coco=COCO(annFile)
 
 
 This code snippet gets the image IDs, this function return either all of the dataset or only n number of ids. This n is gven by ```sample``` in the function.
-```
+```python
 def get_image_ids(sample=None):
     # get all category ids
     catIds = coco.getCatIds()
@@ -69,7 +69,7 @@ To load images and bounding boxes. We do the following. For a specific id.
 
 
 
-```
+```python
 def loadImageNode(id):
     # get image id 
     img_id = self.imageIds[idx]
@@ -79,7 +79,7 @@ def loadImageNode(id):
 ```
 
 The __image Node__ will be of the following format
-```
+```json
 {
     'date_captured': '2013-11-20 05:50:03', 
     'height': 512,
@@ -94,7 +94,7 @@ The __image Node__ will be of the following format
 
 Now , from this __image node__ we get the bounding boxes for them with the following code
 
-```
+```python
 
 def getBoundingBoxCoords(id):
     annIds = coco.getAnnIds(imgIds=id, iscrowd=None)
@@ -109,7 +109,7 @@ def getBoundingBoxCoords(id):
 
 We get a response as follows for bounding boxes. We extract the bbox array from this json response and return the list of bounding box coordinates
 
-```
+```json
 [
     {
         'bbox': [132.99, 21.03, 315.59, 110.4], 
@@ -128,7 +128,7 @@ We get a response as follows for bounding boxes. We extract the bbox array from 
 
 Pytorch provides a really easy to follow dataset generating module. The entire code for loading the dataset in batches is goven below. It is quite self explanatory.
 
-```
+```python
 
 # Importing the Pytorch Dataset Module
 class CocoDatasetObjectDetection(Dataset):
@@ -213,7 +213,7 @@ To generate anchors, we take the image __width, height and the compression facto
 
 The code for this is given below
 
-```
+```python
 def getAnchorsForPixelPoint(i,j,width,height):
     anchors = [] 
     scales = [32,64,128,256]
