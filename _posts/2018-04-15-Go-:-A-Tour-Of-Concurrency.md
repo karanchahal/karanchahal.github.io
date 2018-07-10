@@ -134,7 +134,7 @@ Channels are a way to send/recieve information. Yoiu can make a channel and ever
 
  
 
-```
+```go
 
 c := make(chan int)
 
@@ -146,7 +146,7 @@ This makes a channel named c which passes along int values.
 
  
 
-```
+```go
 
 c <- 5
 
@@ -164,7 +164,7 @@ Example Program using go routines and channels.
 
  
 
-```
+```go
 
 func boring(msg string, c chan string) {
 
@@ -215,7 +215,7 @@ This function returns a channel , while running the respective function
 
  
 
-```
+```go
 
 c := boring("boring!") // Function returning a channel.
 
@@ -254,7 +254,8 @@ We can use the generator pattern to communicate with different instances of a se
 
  
 
-```
+```go
+
 func main() {
 
     joe := boring("Joe")
@@ -289,7 +290,8 @@ We can have something called a _fan in_ function to let whosoever is ready to ta
 
  
 
-```
+```go
+
 func fanIn(input1, input2 <-chan string) <-chan string {
 
     c := make(chan string)
@@ -353,7 +355,8 @@ The select statement is a switch case, but every case is a communication via a c
 
  
 
-```
+```go
+
 select {
 
     case v1 := <-c1:
@@ -387,7 +390,8 @@ Now using the patterns that we have right now, we can rewrite our original Fan I
 
  
 
-```
+```go
+
 func fanIn(input1, input2 <-chan string) <-chan string {
 
     c := make(chan string)
@@ -425,7 +429,8 @@ We can include a time out, if a channel  has no resposne for a while , we can do
 
  
 
-```
+```go
+
 func main() {
 
     c := boring("Joe")
@@ -465,7 +470,8 @@ We can create timeout for the entire conversation using a time.After outside the
 We can turn this around and tell the channel that we are tired of listening to it.
 
  
-```
+```go
+
 quit := make(chan bool)
 
     c := boring("Joe", quit)
@@ -501,7 +507,8 @@ That is , we recieve on the quit channel.
 
  
 
-```
+```go
+
 quit := make(chan string)
 
     c := boring("Joe", quit)
@@ -549,7 +556,8 @@ A sequential way to pass information by dividing a task into steps. We can achie
 
  
 
-```
+```go
+
 func f(left, right chan int) {
 
     left <- 1 + <-right
@@ -616,7 +624,8 @@ We get our search results by quering Web Search, Image Search, Youtube, Maps, Ne
 
 We simulate the search functoin.
 
-```
+```go
+
 var (
 
     Web = fakeSearch("web")
@@ -647,7 +656,8 @@ Testing the framework
 
  
 
-```
+```go
+
 func main() {
 
     rand.Seed(time.Now().UnixNano())
@@ -672,7 +682,8 @@ func main() {
 
  
 
-```
+```go
+
 func Google(query string) (results []Result) {
 
     results = append(results, Web(query))
@@ -703,7 +714,8 @@ No locks, No condition variables. No callbacks.
 
  
 
-```
+```go
+
 func Google(query string) (results []Result) {
 
     c := make(chan Result)
@@ -742,7 +754,8 @@ Adding timeout. Don't wait for slow results.
 
  
 
-```
+```go
+
 c := make(chan Result)
 
     go func() { c <- Web(query) } ()
@@ -784,7 +797,8 @@ Hence, we shoot the results to a bunch of replicas and return whatever comes alo
 
  
 
-```
+```go
+
 func First(query string, replicas ...Search) Result {
 
     c := make(chan Result)
@@ -805,7 +819,8 @@ func First(query string, replicas ...Search) Result {
 
  
 
-```
+```go
+
 func main() {
 
     rand.Seed(time.Now().UnixNano())
@@ -841,7 +856,8 @@ We can reduce tail latency by using replicated search servers.
 
  
 
-```
+```go
+
 c := make(chan Result)
 
     go func() { c <- First(query, Web1, Web2) } ()
@@ -893,7 +909,7 @@ In only a few lines we have converted a _slow,sequential, failure sensitive_ pro
 
  
 
-Hope this helps. In the nest post, we can look into some more advanced concurrency patterns.
+Hope this helps. In the next post, we can look into some more advanced concurrency patterns.
 
  
 
