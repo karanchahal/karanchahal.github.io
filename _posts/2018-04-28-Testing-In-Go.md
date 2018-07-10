@@ -4,7 +4,7 @@ Go has a built in testing framework. It is provided by the go test command.
 
 Here's an example.
 
-```
+```go
 package strings_test
 
 import (
@@ -26,7 +26,7 @@ func TestIndex(t *testing.T) {
 
 Table driven tests are tests where you specify test case with each test case has input and expected output. This code will make things more clear.
 
-```
+```go
 func TestIndex(t *testing.T) {
     var tests = []struct {
         s   string
@@ -53,7 +53,7 @@ func TestIndex(t *testing.T) {
 
 The *testing.T argument  is used for error reporting.
 
-```
+```go
 t.Errorf("got bar = %v, want %v", got, want)
 t.Fatalf("Frobnicate(%v) returned error: %v", arg, err)
 t.Logf("iteration %v", i)
@@ -76,7 +76,7 @@ if runtime.GOARCH == "arm" {
 ### Running Tests
 
 We can run tests for a specific package by running ```go test``` in the directory of the specific package.
-```
+```shell
 $ go test
 PASS
 
@@ -90,7 +90,7 @@ PASS
 
 We can also get test coverage via the ```go test -cover``` command.
 
-```
+```shell
 $ go test -cover
 PASS
 coverage: 96.4% of statements
@@ -99,7 +99,7 @@ ok      strings    0.692s
 
 We can also generate coverage profiles that can be interpreted via the cover tool.
 
-```
+```shell
 $ go test -coverprofile=cover.out
 $ go tool cover -func=cover.out
 strings/reader.go:    Len             66.7%
