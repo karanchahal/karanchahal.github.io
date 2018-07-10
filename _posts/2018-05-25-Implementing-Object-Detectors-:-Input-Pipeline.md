@@ -85,7 +85,7 @@ The __image Node__ will be of the following format
     "height": 512,
     "width": 640,
     "license": 1,
-    "file_name": 'COCO_val2014_000000262148.jpg',
+    "file_name": "COCO_val2014_000000262148.jpg",
     "coco_url": "http://images.cocodataset.org/val2014/COCO_val2014_000000262148.jpg", 
     "id": 262148, 
     "flickr_url": "http://farm5.staticflickr.com/4028/4549977479_547e6b22ae_z.jpg"
